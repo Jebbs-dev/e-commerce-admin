@@ -2,13 +2,12 @@
 
 import * as z from "zod";
 
-import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 
 import { formSchema } from "@/components/modals/store-modal";
 
 export const useCreateStore = () => {
-  const queryClient = useQueryClient();
 
   return useMutation({
     mutationFn: async (values: z.infer<typeof formSchema>) => {
@@ -17,7 +16,6 @@ export const useCreateStore = () => {
 
     },
     onSuccess: (data) => {
-      // queryClient.invalidateQueries({ queryKey: ["stores"] });
       window.location.assign(`/${data.id}`);
     },
   });
