@@ -1,4 +1,3 @@
-import { SettingsFormValues } from "@/app/(dashboard)/[storeId]/(routes)/settings/components/settings-form";
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 import { useParams, useRouter } from "next/navigation";
