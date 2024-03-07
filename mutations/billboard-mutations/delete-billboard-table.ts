@@ -7,8 +7,6 @@ export const useDeleteBillboardTable = () => {
   const params = useParams();
   const router = useRouter();
 
-   
-
   return useMutation({
     mutationFn: async (dataId: string) => {
       const response = await axios.delete(
