@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { useStoreModal } from "@/hooks/use-store-modal";
-import { useCreateStore } from "@/mutations/add-store";
+import { useCreateStore } from "@/mutations/store-mutations/add-store";
 
 import { Modal } from "@/components/ui/modal";
 
