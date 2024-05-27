@@ -4,8 +4,8 @@ import * as z from "zod";
 
 import { useState } from "react";
 import { useParams } from "next/navigation";
-import { useEditStore } from "@/mutations/edit-store";
-import { useDeleteStore } from "@/mutations/delete-store";
+import { useEditStore } from "@/mutations/store-mutations/edit-store";
+import { useDeleteStore } from "@/mutations/store-mutations/delete-store";
 
 import { Store } from "@prisma/client";
 
