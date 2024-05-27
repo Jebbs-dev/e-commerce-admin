@@ -37,6 +37,8 @@ model Billboard {
   updatedAt DateTime @updatedAt
   
   store Store @relation("StoreToBillboard", fields: [storeId], references: [id])
+  billboard Category[]
+
 }
 
 model Category {
